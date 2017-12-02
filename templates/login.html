@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+
+{% block content %}
+<div class="login-wrapper">
+	<h1>Welcome to Flask-Blog</h1>
+	<h3>Please log in to access your blog.</h3>
+
+	<form action="" method="post">
+		<div>
+			<input type="text" placeholder="username" name="username" value="{{ request.form.username }}">
+		</div>
+		<div>
+			<input type="password" placeholder="password" name="password" value="{{ request.form.password }}">
+		</div>
+		<div>
+			<button type="submit">Log In</button>
+		</div>
+	</form>
+</div>
+{% endblock %}
